@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>"
+    />
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <h1 class="site-title">My Bookshelf</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper-flex">
+        <div class="content">
+          <section id="header" class="content-wrapper">
+            <ul class="tab-nav">
+              <li class="active" data-ref="form-book-container">Form</li>
+              <li data-ref="search-book-container">Search</li>
+            </ul>
+            <div id="form-book-container" class="header-container active">
+              <button class="btn btn-warning btn-reset">
+                Reset <i class="fa fa-refresh"></i>
+              </button>
+              <form action="javascript:void(0)" id="form-book">
+                <input type="hidden" name="form-book-id" id="form-book-id" />
+
+                <label for="form-book-title">Title</label>
+                <input
+                  type="text"
+                  id="form-book-title"
+                  name="form-book-title"
+                  placeholder="Your book title"
+                  required
+                />
+
+                <label for="form-book-author">Author</label>
+                <input
+                  type="text"
+                  id="form-book-author"
+                  name="form-book-author"
+                  placeholder="Your book author's name"
+                  required
+                />
+
+                <label for="form-book-year">Year</label>
+                <input
+                  type="number"
+                  id="form-book-year"
+                  name="form-book-year"
+                  placeholder="Your book published year"
+                  required
+                  min="1900"
+                  max="2022"
+                />
+
+                <label for="form-book-is-completed"
+                  >Is the book you read completely ?</label
+                >
+                <select
+                  name="form-book-is-completed"
+                  id="form-book-is-completed"
+                  required
+                >
+                  <option value="">Select option</option>
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+
+                <label for="form-book-image">Cover (optional)</label>
+                <input
+                  type="url"
+                  id="form-book-image"
+                  name="form-book-image"
+                  placeholder="Your book cover image URL"
+                />
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+            <div id="search-book-container" class="header-container">
+              <button class="btn btn-warning btn-reset">
+                Reset <i class="fa fa-refresh"></i>
+              </button>
+              <form action="javascript:void(0)" id="search">
+                <input
+                  type="text"
+                  id="keyword"
+                  name="keyword"
+                  placeholder="Search keyword (book title)"
+                />
+                <input type="submit" value="Search" />
+              </form>
+            </div>
+          </section>
+          <section id="readed-book" class="content-wrapper">
+            <h2>Readed Book</h2>
+            <p>Here is my book collections that i've read.</p>
+            <div id="readed-book-collection">
+              <div class="book-buffer">
+                <p>Opss, Its empty.</p>
+              </div>
+            </div>
+          </section>
+          <section id="unreaded-book" class="content-wrapper">
+            <h2>Uncompleted Read Book</h2>
+            <p>Here is book collections that i've to read soon.</p>
+            <div id="unreaded-book-collection">
+              <div class="book-buffer">
+                <p>Opss, Its empty.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <aside class="profile">
+          <h1>Creator</h1>
+          <img src="assets/images/profile.jpg" alt="Profile Picture" />
+          <div class="name-container">
+            <h2>IGBN. Satya Wibawa</h2>
+            <p>Website Developer</p>
+          </div>
+          <div class="contact-icons">
+            <a href="mailto:i.g.b.n.satyawibawa@gmail.com" title="email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://github.com/gungsatya"
+              title="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="profile-link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gung-satya"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://twitter.com/gung_satya"
+              title="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <a
+              href="https://facebook.com/satya.wibawa"
+              title="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook"></i
+            ></a>
+
+            <a
+              href="https://instagram.com/gung_satya"
+              title="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://gungsatya.github.io/feed.xml" title="RSS Feed"
+              ><i class="fas fa-rss-square"></i
+            ></a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>Copyright IGBN.Satya Wibawa</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

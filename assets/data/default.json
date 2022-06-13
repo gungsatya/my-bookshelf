@@ -1,0 +1,34 @@
+[
+    {
+        "id": 111111111,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J. K. Rowling",
+        "year": 1997,
+        "isComplete": true,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg/220px-Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg"
+    },
+    {
+        "id": 222222222,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": "J. K. Rowling",
+        "year": 1998,
+        "isComplete": false,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg/220px-Harry_Potter_and_the_Chamber_of_Secrets.jpg"
+    },
+    {
+        "id": 333333333,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J. K. Rowling",
+        "year": 1999,
+        "isComplete": true,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg/220px-Harry_Potter_and_the_Prisoner_of_Azkaban.jpg"
+    },
+    {
+        "id": 444444444,
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J. K. Rowling",
+        "year": 2000,
+        "isComplete": true,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Harry_Potter_and_the_Goblet_of_Fire_cover.png/220px-Harry_Potter_and_the_Goblet_of_Fire_cover.png"
+    }
+]
